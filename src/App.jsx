@@ -1,12 +1,11 @@
-import './App.css'
-import Ejercicio from './components/ListaProductos';
+import { ListaProductos } from './components/ListaProductos.jsx';
 
 function App() {
-return (
-    <main>
-      <h1>Mi Supermercado</h1>
+  return (
+    <div>
+      <h1>Supermercado</h1>
       <ListaProductos />
-    </main>
+    </div>
   );
 }
 
