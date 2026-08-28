@@ -19,5 +19,9 @@ export const supermercado = [
 {"id": 18, "Nombre": "Lechuga", "precio": 1600, "grupo": "verdura", "cosecha": "todo el año"},
 {"id": 19, "Nombre": "Ajo", "precio": 6000, "grupo": "verdura", "cosecha": "verano"},
 {"id": 20, "Nombre": "Aguacate", "precio": 4500, "grupo": "fruta", "cosecha": "mayo a julio"},
-{"id": 21, "Nombre": "Café", "precio": 15000, "grupo": "grano", "cosecha": "octubre a mayo"}
+{"id": 21, "Nombre": "Café", "precio": 15000, "grupo": "grano", "cosecha": "octubre a mayo"},
+{"id": 22, "Nombre": "Fresa", "precio": 4800, "grupo": "fruta", "cosecha": "todo el año"},
+{"id": 23, "Nombre": "Piña", "precio": 3500, "grupo": "fruta", "cosecha": "todo el año"},
+{"id": 24, "Nombre": "Brocoli", "precio": 3200, "grupo": "verdura", "cosecha": "invierno"},
+{"id": 25, "Nombre": "Pimentón", "precio": 2200, "grupo": "verdura", "cosecha": "verano"}
 ];

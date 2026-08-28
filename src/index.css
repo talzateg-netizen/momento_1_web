@@ -70,29 +70,21 @@ h1,
 h2 {
   font-family: var(--heading);
   font-weight: 500;
-  color: var(--text-h);
+  color: #E9967A;
 }
 
 h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
-  @media (max-width: 1024px) {
+}
+
+@media (max-width: 1024px) {
+  h1 {
     font-size: 36px;
     margin: 20px 0;
+    /* Se elimina background-color de aquí para que siga manteniendo la letra rosa */
   }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
-p {
-  margin: 0;
 }
 
 code,
@@ -108,4 +100,87 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+html,
+body,
+#root {
+  background-color: #fff0f5 !important;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+}
+/* Modifica el color del borde de las tarjetas */
+div[style*="border"] {
+  border-color: #ffb6c1 !important; /* Rosa suave pastel */
+  border-width: 2px !important;     /* Define el grosor */
+  border-radius: 12px !important;    /* Bordes redondeados */
+}
+
+/* Estilo moderno y legible para el título del producto */
+div[style*="border"] h3 {
+  color: #2c3e50;               /* Gris oscuro elegante en lugar de negro plano */
+  font-family: 'Segoe UI', Roboto, sans-serif; /* Tipografía limpia y moderna */
+  font-size: 22px;              /* Tamaño destacado pero equilibrado */
+  font-weight: 700;             /* Letra en negrita bien definida */
+  text-transform: capitalize;   /* Asegura que la primera letra siempre sea mayúscula */
+  letter-spacing: 0.5px;        /* Ligera separación entre letras */
+  margin: 12px 0 6px 0;         /* Ajuste de márgenes arriba y abajo */
+}
+
+/* Configuración general del texto de los párrafos en la tarjeta */
+div[style*="border"] p {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  color: #666666; /* Color suave para el texto del valor (ej. grano, todo el año) */
+  margin: 6px 0;
+}
+
+/* Estilo para las etiquetas en negrita (Grupo: y Cosecha:) */
+div[style*="border"] p strong {
+  color: #2c3e50; /* Mismo color oscuro elegante del título h3 */
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+/* Reducción de tamaño y separación entre tarjetas */
+div[style*="border"] {
+  width: 200px !important;             /* Ancho más compacto */
+  height: 250px !important;            /* Alto reducido */
+  margin: 12px !important;             /* Separación y distancia alrededor de cada tarjeta */
+  padding: 12px !important;            /* Espaciado interno cómodo */
+  
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+}
+
+/* Ajuste proporcional para la imagen con el nuevo tamaño */
+div[style*="border"] img {
+  width: 100% !important;
+  height: 110px !important;
+  object-fit: cover !important;
+  border-radius: 6px !important;
+}
+
+/* 1. Permite que las tarjetas salten de línea y se ajusten al ancho */
+div:has(> div[style*="border"]),
+.lista-productos {
+  display: flex !important;
+  flex-wrap: wrap !important; /* Salta a la siguiente fila cuando no caben */
+  justify-content: center !important; /* Centra las tarjetas en pantalla */
+  gap: 16px !important; /* Mantiene la distancia exacta entre tarjetas */
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 20px !important;
+}
+
+/* 2. Oculta desbordamientos horizontales en toda la página */
+html, body {
+  max-width: 100vw !important;
+  overflow-x: hidden !important; /* Elimina la barra horizontal */
 }
