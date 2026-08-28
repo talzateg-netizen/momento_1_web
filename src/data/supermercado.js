@@ -1,0 +1,24 @@
+export const supermercado = [
+
+    {"id": 1, "Nombre": "Arroz", "precio": 2000, "grupo": "grano", "cosecha": "todo el año"},
+    {"id": 2, "Nombre": "Frijol", "precio": 4500, "grupo": "grano", "cosecha": "octubre a diciembre"},
+    {"id": 3, "Nombre": "Lenteja", "precio": 3200, "grupo": "grano", "cosecha": "todo el año"},
+    {"id": 4, "Nombre": "Garbanzo", "precio": 4000, "grupo": "grano", "cosecha": "verano"},
+    {"id": 5, "Nombre": "Maíz", "precio": 2500, "grupo": "grano", "cosecha": "agosto a octubre"},
+    {"id": 6, "Nombre": "Arveja", "precio": 3000, "grupo": "grano", "cosecha": "primavera"},
+    {"id": 7, "Nombre": "Zanahoria", "precio": 1800, "grupo": "verdura", "cosecha": "todo el año"},
+    {"id": 8, "Nombre": "Cebolla", "precio": 2200, "grupo": "verdura", "cosecha": "todo el año"},
+    {"id": 9, "Nombre": "Tomate", "precio": 2800, "grupo": "verdura", "cosecha": "verano"},
+    {"id": 10, "Nombre": "Papa", "precio": 1500, "grupo": "tubérculo", "cosecha": "todo el año"},
+    {"id": 11, "Nombre": "Yuca", "precio": 2000, "grupo": "tubérculo", "cosecha": "todo el año"},
+    {"id": 12, "Nombre": "Plátano", "precio": 2500, "grupo": "fruta", "cosecha": "todo el año"},
+    {"id": 13, "Nombre": "Manzana", "precio": 5000, "grupo": "fruta", "cosecha": "otoño"},
+    {"id": 14, "Nombre": "Banano", "precio": 1800, "grupo": "fruta", "cosecha": "todo el año"},
+    {"id": 15, "Nombre": "Naranja", "precio": 3000, "grupo": "fruta", "cosecha": "invierno"},
+    {"id": 16, "Nombre": "Limón", "precio": 2500, "grupo": "fruta", "cosecha": "todo el año"},
+    {"id": 17, "Nombre": "Espinaca", "precio": 2000, "grupo": "verdura", "cosecha": "invierno"},
+    {"id": 18, "Nombre": "Lechuga", "precio": 1600, "grupo": "verdura", "cosecha": "todo el año"},
+    {"id": 19, "Nombre": "Ajo", "precio": 6000, "grupo": "verdura", "cosecha": "verano"},
+    {"id": 20, "Nombre": "Aguacate", "precio": 4500, "grupo": "fruta", "cosecha": "mayo a julio"},
+    {"id": 21, "Nombre": "Café", "precio": 15000, "grupo": "grano", "cosecha": "octubre a mayo"}
+];
